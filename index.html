@@ -7,90 +7,109 @@
     <meta name="keywords" content="Buslik, мячик, вкусняшка, паштет">
     <meta name="description" content="Hello - я Буслик, тут много информации про меня и моих кожанных">
     <title>Буслик</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="container">
     <h1>Здарова, это Буслик</h1>
-    <p>Утро. Кожанные прснулись.</p>
-    <hr>
-    <p>Нужно сделать вид что я сплю, а то снова потащат на улицу делать <strong>грязные дела</strong>  в эту <em>сырую погоду</em> </p>
-
-    <h2>Moи фотки</h2>
-    <img src="buslik.jpg" alt="если нет фотки я не при чем!" width="200">
-    <hr>
-    <h2>Мои сайты</h2>
-        <p>
-        <a href="https://google.com" target="_blank">google</a>
-        <br>
-        <a href="https://youtube.com" target="_blank">yotube</a>
-        </p>
-    <hr>
-    <h1>Мои хобби</h1>
-    <ul>
-        <li>Мячик</li>
-        <li>Мячик</li>
-        <li>Мячик</li>
-        <li>Мячик</li>
-        <li>Вкусняшки, паштет</li>
-    </ul>
-    <hr width="400">
-    <ol>
-        <li>Мячик</li>
-        <li>Мячик</li>
-        <li>Мячик</li>
-        <li>Мячик</li>
-        <li>Вкусняшки, паштет</li>
-    </ol>
-
-    <hr>
-
-    <h2>Мои обязанности или график дня</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>время</th>
-                <th>событие</th>
-                <th>результативность</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>6:30</td>
-                <td>смотреть на спящих кожанных</td>
-                <td>кожанные просыпаются</td>
-            </tr>
-            <tr>
-                <td>7:30</td>
-                <td>идем гулять</td>
-                <td>1 и 2 кучи - по настроению</td>
-            </tr>
-            <tr>
-                <td>9:00</td>
-                <td>кожанные уехали</td>
-                <td>можно чилить и кайфовать</td>
-            </tr>
-        </tbody>
-    </table>
-
-<h2>Связаться со мной</h2>
-    <form action="/">
+    <div class="info">
         <div>
-            <label for="text">Ваше имя</label>
-            <input type="text" id="text" placeholder="Введите имя" >
+            <img src="buslik.jpg" alt="если нет фотки я не при чем!" class="avatar">
+            <h2>мoи фотки</h2>
         </div>
+        
+        <div class="links">
+            <p>Утро. Кожанные прснулись.
+                Нужно сделать вид что я сплю, а то снова потащат на улицу делать <strong>грязные дела</strong>  в эту <em>сырую погоду</em> </p>
+            <h2>Мои сайты</h2>
+            <p>
+                <a href="https://google.com" target="_blank" class="btn">google</a>
+                <a href="https://youtube.com" target="_blank" class="btn">yotube</a>
+                <a href="https://youtube.com" target="_blank" class="btn">Telegram</a>
+            </p>
 
-        <div>
-            <label for="email">Ваш e-mail</label>
-            <input type="email" id="email" placeholder="Введите email" >
-        </div>
-        <div>
-            <label for="message">Ваше сообщение</label>
+            <div class="btn">
+                <p>
+                    <button class="btn">Отправить!</button>
+                </p>
+            </div>
+        </div>  
+    </div>
+  
+    <div class="hobby">
+        <h1>Мои хобби</h1>
+        <ul>
+            <li>Мячик</li>
+            <li>Мячик</li>
+            <li>Мячик</li>
+            <li>Мячик</li>
+            <li>Вкусняшки, паштет</li>
+        </ul>
+        <hr width="400">
+        <ol>
+            <li>Мячик</li>
+            <li>Мячик</li>
+            <li>Мячик</li>
+            <li>Мячик</li>
+            <li>Вкусняшки, паштет</li>
+        </ol>
+    </div>
+    <div class="work">
+        <h2>Мои обязанности или график дня</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>время</th>
+                    <th>событие</th>
+                    <th>результативность</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>6:30</td>
+                    <td>смотреть на спящих кожанных</td>
+                    <td>кожанные просыпаются</td>
+                </tr>
+                <tr>
+                    <td>7:30</td>
+                    <td>идем гулять</td>
+                    <td>1 и 2 кучи - по настроению</td>
+                </tr>
+                <tr>
+                    <td>9:00</td>
+                    <td>кожанные уехали</td>
+                    <td>можно чилить и кайфовать</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="message">
+        
+        <form action="/">
+            <h2>Связаться со мной</h2>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="text">Ваше имя</label>
+                    <input type="text" id="text" placeholder="Введите имя" >
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Ваш e-mail</label>
+                    <input type="email" id="email" placeholder="Введите email" >
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="message">Ваше сообщение</label>
+                <textarea id="message" cols="50" rows="10" placeholder="Введите сообщение..."></textarea>
+            </div>
+
+            <input type="Submit" value="Отправить!">
             <br>
-            <textarea id="message" cols="50" rows="10" placeholder="Введите сообщение..."></textarea>
-        </div>
+            <button type="reset">reset!</button>
+        </form>
+    </div>
+</div>
 
-        <input type="Submit" value="Отправить!">
-        <br>
-        <button type="reset">reset!</button>
-    </form>
 </body>
 </html>
